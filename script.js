@@ -322,3 +322,10 @@ function startGame() {
 
 // ゲーム開始
 startGame();
+
+const titleElement = document.getElementById('sparkle-title');
+let isVisible = true;
+setInterval(() => {
+  isVisible = !isVisible;
+  titleElement.style.display = isVisible ? 'block' : 'none';
+}, 2000);
