@@ -1,0 +1,82 @@
+/* 基本的なページスタイリング */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* 薄いグレーの背景 */
+}
+
+/* ゲームコンテナのスタイリング */
+#game-container {
+    display: flex;
+    border: 3px solid #333; /* 濃いグレーの境界線 */
+    background-color: #fff; /* 白色の背景 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* ゲームボードのスタイリング */
+#game-board {
+    width: 300px; /* 幅300px */
+    height: 600px; /* 高さ600px */
+    background-color: #e0e0e0; /* やや薄いグレーの背景 */
+    border-right: 3px solid #333; /* 右側に境界線 */
+    display: grid; /* グリッドレイアウトを使用 */
+    grid-template-columns: repeat(10, 1fr); /* 10列 */
+    grid-template-rows: repeat(20, 1fr); /* 20行 */
+}
+
+/* サイドパネルのスタイリング */
+#side-panel {
+    width: 150px; /* 幅150px */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* 要素を縦に並べる */
+    align-items: center; /* 中央揃え */
+}
+
+/* スコア表示エリアのスタイリング */
+#score-area {
+    margin-bottom: 20px; /* 下マージン */
+    text-align: center; /* テキスト中央揃え */
+}
+
+#score-area h2 {
+    margin-top: 0; /* 上マージンなし */
+}
+
+/* 次のテトリミノ表示エリアのスタイリング */
+#next-tetromino-area {
+    margin-bottom: 20px; /* 下マージン */
+    text-align: center; /* テキスト中央揃え */
+}
+
+#next-tetromino-area h2 {
+    margin-top: 0; /* 上マージンなし */
+}
+
+/* 次のテトリミノのプレースホルダーのスタイリング */
+#next-tetromino {
+    width: 100px; /* 幅100px */
+    height: 100px; /* 高さ100px */
+    background-color: #e0e0e0; /* やや薄いグレーの背景 */
+    border: 1px solid #ccc; /* 薄いグレーの境界線 */
+}
+
+/* 操作説明エリアのスタイリング */
+#controls-area {
+    text-align: left; /* テキスト左揃え */
+}
+
+#controls-area h2 {
+    margin-top: 0; /* 上マージンなし */
+    text-align: center; /* テキスト中央揃え */
+}
+
+/* テトリミノのブロックの基本的なスタイリング（script.jsで色を指定） */
+.block {
+    border: 1px solid rgba(0, 0, 0, 0.1); /* ブロック間の薄い境界線 */
+    box-sizing: border-box; /* borderを含めてサイズ計算 */
+}

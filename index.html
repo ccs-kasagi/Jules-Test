@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テトリス</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ゲームコンテナ -->
+    <div id="game-container">
+        <!-- ゲームボード -->
+        <div id="game-board"></div>
+
+        <!-- サイドパネル -->
+        <div id="side-panel">
+            <!-- スコア表示エリア -->
+            <div id="score-area">
+                <h2>スコア</h2>
+                <p id="score">0</p>
+            </div>
+
+            <!-- 次のテトリミノ表示エリア -->
+            <div id="next-tetromino-area">
+                <h2>次へ</h2>
+                <div id="next-tetromino"></div>
+            </div>
+
+            <!-- 操作説明エリア -->
+            <div id="controls-area">
+                <h2>操作</h2>
+                <p>左: ←</p>
+                <p>右: →</p>
+                <p>回転: ↑</p>
+                <p>ソフトドロップ: ↓</p>
+                <p>ハードドロップ: スペース</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
